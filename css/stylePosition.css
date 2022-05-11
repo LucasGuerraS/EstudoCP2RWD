@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Padrão de estilo, sem nenhuma tag de position */
+body{
+    height: 300vh;
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+
+
+/*--------------------------------------------------
+
+ Position STATIC é o default de qualquer elemento não funciona com qualquer tag, seja ela top ou bottom: 
+
+ .container{
+    position: static; 
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+
+-------------------------------------------------*/
+
+/*--------------------------------------------------
+
+ Position FIXED faz com que o elemento se grude nao tela na desde o top com as especiações de top, left, bottom e right colocadas, e o elemento que está FIXED desce até o final da rolagem da página na posição setada.
+ 
+ .container{
+    position: fixed;top: 50px;left: 150px; 
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+
+-------------------------------------------------*/
+
+/*--------------------------------------------------
+
+ Position STICKY faz com que o objeto se grude até o final na rolagem da página a partir do lugar setado nas especiações de top, left, bottom e right.
+ 
+ .container{
+    margin-top: 20vh;
+    position: sticky;
+    top: 0;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+
+-------------------------------------------------*/
+
+/*--------------------------------------------------
+
+ Position RELATIVE faz com que o objeto se deslque a partir da sua posição normal, ou seja, se colocar left 200px serão deslocados para a direita 200px fazendo o objeto se deslocar para a direita em 200px.
+ 
+ .container{
+    position: relative;
+    left: 200px;
+    top: 150px;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+
+-------------------------------------------------*/
+
+/*--------------------------------------------------
+
+ Position ABSOLUTE, o objeto que recebe o position ABSOLUTE se desloca em relação ao objeto mais próximo na hierarquia que possui um position RELATIVE, se não tiver nenhum objeto mais próximo, ele se desloca em relação ao BODY da página, então se o elemento receber um top de 50px ele irá se mover 50px para baixo em relação ao elemento pai e se não houver um ele se moverá em relação ao BODY.
+ 
+ Position ABSOLUTE com um elemento pai que possui um position RELATIVE, o elemento filho se desloca em relação ao elemento pai:
+
+ .container{
+    position: relative;
+    left: 200px;
+    top: 150px;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.box{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+
+Position ABSOLUTE sem um elemento pai que possui um position RELATIVE, o elemento filho se desloca em relação ao BODY da página:
+
+ .container{
+    left: 200px;
+    top: 150px;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.box{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+
+-------------------------------------------------*/
+
+/*------------------------
+Também é possível adicionar a tag z-index para definir a ordem de exibição de um elemento. Quanto maior a tag for maior a prioridade de exibição.
+--------------------------*/
+

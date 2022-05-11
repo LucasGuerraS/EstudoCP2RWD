@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.div{
+    width: 200px;
+    height: 200px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.div_container{
+    background-color: red;
+    float: right;
+}
+
+.div_box{
+    background-color: blueviolet;
+    float: left;
+}
+
+article {
+    background-color: violet;
+    overflow: hidden;
+}
+
+p{
+    clear: right;
+}
+
+
