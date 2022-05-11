@@ -1,0 +1,33 @@
+.b1, .b2, .b3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    font: bold 2em/8 sans-serif;
+    text-align: center;
+    color: #FFF;
+}
+
+.b1{
+    background: red;   
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.b2{
+    background: blue;   
+    left: 30px;
+    top: 150px;
+    z-index: 2;
+}
+
+.b3{
+    background: green;   
+    left: 60px;
+    top: 300px;
+    z-index: 3;
+}
+
+/*------------------------
+Também é possível adicionar a tag z-index para definir a ordem de exibição de um elemento. Quanto maior a tag for maior a prioridade de exibição, Só funciona quando é determinado um posicionamento para o elemento, exceto o static pois é o posicionamento padrão.
+--------------------------*/
